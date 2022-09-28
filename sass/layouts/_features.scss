@@ -1,0 +1,33 @@
+.features {
+  &__title {
+    color: var(--main-tx-cl);
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  &__item {
+    position: relative;
+  }
+  &__text {
+    position: absolute;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background-color: var(--bg-cl-work-a);
+    color: var(--white-txt-cl);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
