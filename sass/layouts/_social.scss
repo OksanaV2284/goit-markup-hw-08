@@ -2,6 +2,9 @@
   &__list {
     display: flex;
     margin-top: 10px;
+
+    align-items: center;
+    justify-content: center;
   }
 
   &__link {
@@ -30,7 +33,12 @@
 
   &__list_ft {
     margin-top: 20px;
-    margin-right: 93px;
+    margin-right: 0px;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 93px;
+    }
   }
 
   &__item {

@@ -4,11 +4,21 @@
   &__container {
     display: flex;
     align-items: center;
+    align-content: center;
   }
+
   &__group {
-    display: flex;
-    gap: 50px;
-    align-items: center;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      margin-left: auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      gap: 30px;
+    }
   }
 
   &__link {
@@ -16,14 +26,24 @@
     color: var(--main-tx-par);
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 12px;
+    line-height: calc(14 / 12);
     letter-spacing: 0.02em;
     cursor: pointer;
-    display: flex;
     align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      padding: 5px;
+      font-size: 14px;
+      line-height: calc(16 / 14);
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+    }
   }
 
   &__link:hover,

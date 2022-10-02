@@ -11,7 +11,9 @@
 .header__logo {
   margin-right: 93px;
 }
-
+.footer__logo {
+  align-items: center;
+}
 .logo:hover,
 .logo:focus {
   color: var(--accent-color);

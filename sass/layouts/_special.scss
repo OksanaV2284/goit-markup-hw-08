@@ -1,6 +1,7 @@
 .special {
   &__list {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
   }
 
@@ -12,7 +13,16 @@
     color: var(--main-tx-cl);
     margin-top: 30px;
     margin-bottom: 10px;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
+    @media screen and (min-width: 1200px) {
+      text-align: start;
+    }
   }
+
   &__item {
     flex-basis: calc((100% - 30px * 3) / 4);
   }
@@ -21,8 +31,19 @@
     background-color: var(--bg-cl-icon);
     align-items: center;
     justify-content: center;
-    width: 270px;
+    width: 450px;
     height: 120px;
+
+    @media screen and (max-width: 479px) {
+      max-width: 450px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
 
   &__desc {
