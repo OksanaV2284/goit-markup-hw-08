@@ -12,13 +12,11 @@
   --bg-cl-btn: #f5f4fa;
   --bg-cl-work-a: rgba(47, 48, 58, 0.8);
   --bg-cl-soc-link: #188ce8;
-
-  --items: 3;
-  --indent: 30px;
+  --cl-icon: #afb1b8;
   --border-portfolio: 1px solid #eeeeee;
 
-  --items-team: 4;
-  --indent-team: 30px;
+  --items: 4;
+  --indent: 30px;
 
   --icon-color: #afb1b8;
 
@@ -27,3 +25,7 @@
   --main-font: 'Roboto', sans-serif;
   --supporting-font: 'Raleway', sans-serif;
 }
+// breakpoints
+$mobile: 480px;
+$tablet: 768px;
+$desctop: 1200px;
