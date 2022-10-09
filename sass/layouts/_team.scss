@@ -1,6 +1,5 @@
 .team {
   background-color: var(--bg-cl-btn);
-  padding-top: 60px;
 
   &__title {
     font-size: 28px;
@@ -9,7 +8,6 @@
     color: var(--main-tx-cl);
 
     @media screen and (min-width: 1200px) {
-      padding-top: 94px;
       font-size: 36px;
       line-height: calc(42 / 36);
     }
@@ -19,6 +17,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    align-items: center;
+    justify-content: center;
   }
 
   &__img {
